@@ -17,7 +17,7 @@ st.header("You are viewing: "+option)
 
 if option == "Start Here":
     
-    st.markdowm(' :arrow_left: __Use the side bar to navigate this portal__')
+    st.markdown(' :arrow_left: __Use the side bar to navigate this portal__')
     st.image('chatbot.jpg')
    
 
