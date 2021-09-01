@@ -25,7 +25,7 @@ if option == "Machine Learning - Prediction":
 
 if option == "Machine Learning - Classification":
     st.subheader(option)
-    project_info = {"Project Name":" Predicting Subscription Service Cancellations","Project Type":"Machine Learning - Classification","Machine Learning Model": "Decision Tree","Machine Learning description":"Decision Tree models can be used to placed dependant variables into groups or categories based on their characteristics/features, in this case - 'cancel' or 'don't cancel' the subscription. There are a variety of classification models that are best suited for different applications aand data sets, such as Random Forest, KNN and Support Vector Machine","Applications":"Marketing, Operations, Logistics, Finance"}
+    project_info = {"Project Name":" Predicting Subscription Service Cancellations","Project Type":"Machine Learning - Classification","Machine Learning Model": "Decision Tree","Machine Learning description":"Decision Tree models can be used to place dependant variables into groups or categories based on their characteristics/features, in this case - 'cancel' or 'don't cancel' the subscription. There are a variety of classification models that are best suited for different applications and data sets, such as Random Forest, KNN and Support Vector Machine","Applications":"Marketing, Operations, Logistics, Finance"}
     st.write(project_info)
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
     st.markdown(project_link, unsafe_allow_html=True)
