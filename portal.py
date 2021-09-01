@@ -47,8 +47,8 @@ if option == "API Integration":
         st.header(screen)
         st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) _AAPL_, _AMZN_, _GOOGL_")
         st.markdown("____________")
-        st.sidebar.markdown(":innocent:")
-        st.sidebar.write("Scroll down to see the output!")
+        st.sidebar.markdown(":innocent:","Scroll down to see the output!")
+        
         
         
     
