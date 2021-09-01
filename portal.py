@@ -43,10 +43,11 @@ if option == "API Integration":
         symbol = st.sidebar.text_input("Symbol", value="NFLX")
         st.title("Asset: "+ symbol)
 
-        screen =st.sidebar.selectbox("Select Information",("Stock Overview", "Price Data", "Social Media Mentions"))
+        screen = st.sidebar.selectbox("Select Information",("Stock Overview", "Price Data", "Social Media Mentions"))
         st.header(screen)
         st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) _AAPL_, _AMZN_, _GOOGL_")
         st.markdown("____________")
+        st.sidebar..write("Scroll down to see the output :)")
         
     
         if screen == "Stock Overview":
