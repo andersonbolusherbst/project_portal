@@ -31,11 +31,11 @@ if option == "Machine Learning - Classification":
     st.markdown(project_link, unsafe_allow_html=True)
 
 if option == "API Integration":
-    st.write("API Integration")
+    st.subheader(option)
     
 if option == "Data Analysis":
-    st.write("Data Analysis")
+    st.subheader(option)
 
 if option == "Automation":
-    st.write("Automation")
+    st.subheader(option)
 
