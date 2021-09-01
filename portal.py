@@ -18,7 +18,7 @@ st.header("You are viewing: "+option)
 if option == "Start Here":
     
     st.write("Use the side bar to navigate this portal")
-    st.image('redandblue.jpeg')
+    st.image('./redandblue.jpeg')
     st.markdown('<h1>Your Satelite Tech Team</h1>',unsafe_allow_html=True)
 
 if option == "Machine Learning - Prediction":
