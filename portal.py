@@ -45,7 +45,7 @@ if option == "API Integration":
         screen =st.sidebar.selectbox("Select Information",("Stock Overview", "Price Data", "Social Media Mentions"))
         st.header(screen)
         st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) _AAPL_, _AMZN_, _GOOGL_")
-        st.markdown("____________"
+        st.markdown("____________")
     
         if screen == "Stock Overview":
             stock = IEXStock(config.IEX_API_TOKEN, symbol)
