@@ -40,11 +40,12 @@ if option == "API Integration":
         st.subheader("This is live data coming to you from another database. We do this using API's and can connect multiple API's for you, bringing everything you need to one place!")
 
         symbol = st.sidebar.text_input("Symbol", value="NFLX")
-        st.subheader("Asset: "+ symbol)
+        st.title("Asset: "+ symbol)
 
         screen =st.sidebar.selectbox("Select Information",("Stock Overview", "Price Data", "Social Media Mentions"))
-        st.title(screen)
-        st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) AAPL, AMZN, GOOGL")
+        st.header(screen)
+        st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) _AAPL_, _AMZN_, _GOOGL_")
+        st.markdown("____________"
     
         if screen == "Stock Overview":
             stock = IEXStock(config.IEX_API_TOKEN, symbol)
