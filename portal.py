@@ -17,7 +17,7 @@ st.header("You are viewing: "+option)
 
 if option == "Start Here":
     
-    st.write("Use the side bar to navigate this portal")
+    st.markdowm(":arrow_left: __Use the side bar to navigate this portal__")
     st.image('chatbot.jpg')
    
 
@@ -123,10 +123,10 @@ if option == "API Integration":
 
     
 if option == "Data Analysis":
-    st.write("data analysis project still to be added")
+    st.subheader("data analysis project will be added soon")
     
 
 if option == "Automation":
-    st.write("automation project still to be added")
+    st.subheader("data analysis project will be added soon")
     
 
