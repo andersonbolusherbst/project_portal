@@ -7,7 +7,7 @@ import datetime as dt
 from iex import IEXStock
 
 
-st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;}</style>', unsafe_allow_html=True)
+st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}</style>', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
 st.write("Explore the projects on this dashboard to learn more about our services and the applications of Machine Learning and Data Science")
 
