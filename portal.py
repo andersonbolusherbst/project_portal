@@ -37,8 +37,8 @@ if option == "Machine Learning - Classification":
 if option == "API Integration":
     st.header(option)
     if option == 'API Integration':
-        st.subheader("This is live data coming to you from another database. We do this using API's and can connect multiple API's for you, bringing everything you need to one place!")
-        st.subheader("__Check out the side bar for options under 'Select Information'!__")
+        st.write("This is live data coming to you from another database. We do this using API's and can connect multiple API's for you, bringing everything you need to one place!")
+        st.subheader("_Check out the side bar for options under 'Select Information'!_")
         st.markdown("____________")
         symbol = st.sidebar.text_input("Symbol", value="NFLX")
         st.title("Asset: "+ symbol)
