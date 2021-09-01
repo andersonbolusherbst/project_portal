@@ -118,8 +118,10 @@ if option == "API Integration":
 
     
 if option == "Data Analysis":
+    st.write("data analysis project still to be added")
     
 
 if option == "Automation":
+    st.write("automation project still to be added")
     
 
