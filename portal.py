@@ -9,7 +9,7 @@ st.write("Explore the projects on this dashboard to learn more about our service
 
 option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','API Integration', 'Data Analysis', 'Automation'))
 
-st.header("You are viewing: " option)
+st.header("You are viewing: ",option)
 
 if option == "Start Here":
     st.write("Use the side bar to navigate this portal")
