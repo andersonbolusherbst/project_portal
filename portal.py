@@ -37,12 +37,14 @@ if option == "Machine Learning - Classification":
 if option == "API Integration":
     st.header(option)
     if option == 'API Integration':
+        st.subheader("This is live data coming to you from another database. We do this using API's and can connect multiple API's for you, bringing everything you need to one place!")
+
         symbol = st.sidebar.text_input("Symbol", value="NFLX")
         st.subheader("Asset: "+ symbol)
 
         screen =st.sidebar.selectbox("Select Information",("Stock Overview", "Price Data", "Social Media Mentions"))
         st.title(screen)
-        st.subheader("Put your favorite stock ticker in the sidebar!")
+        st.subheader("Put your favorite stock ticker in the sidebar! ~ e.g) AAPL, AMZN, GOOGL")
     
         if screen == "Stock Overview":
             stock = IEXStock(config.IEX_API_TOKEN, symbol)
@@ -53,7 +55,7 @@ if option == "API Integration":
             url = f"https://cloud.iexapis.com/stable/stock/{symbol}/logo?token={config.IEX_API_TOKEN}"
             p = requests.get(url)
             logo = p.json()
-            st.subheader("Check out the side bar for more options under 'view'!")
+            st.subheader("Check out the side bar for more options under 'Select Information'!")
 
 
             col1, col2 = st.columns([1,1])
@@ -79,7 +81,6 @@ if option == "API Integration":
 
 
         if screen == "Price Data":
-            st.subheader("This is live data coming to you from another database. We do this using API's and can connect multiple API's for you, bringing everything you need to one place!")
             st.image(f"https://charts2.finviz.com/chart.ashx?t={symbol}")
             url = f"https://cloud.iexapis.com/stable/stock/{symbol}/stats?token={config.IEX_API_TOKEN}"
             m = requests.get(url)
