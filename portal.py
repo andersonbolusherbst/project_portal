@@ -18,6 +18,7 @@ st.header("You are viewing: "+option)
 if option == "Start Here":
     
     st.write("Use the side bar to navigate this portal")
+    st.image('redanadblue.jpeg')
 
 if option == "Machine Learning - Prediction":
     
