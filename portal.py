@@ -7,7 +7,7 @@ import datetime as dt
 from iex import IEXStock
 
 
-st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}#project_link{border: solid 1.5px;border-radius: 2px;padding: 5px;text-decoration: none;font-weight: 500;}#project_link:hover{background-color: #4fc3f7;color: black;}</style>', unsafe_allow_html=True)
+st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}div > p > a{border: solid 1.5px;border-radius: 2px;padding: 5px;text-decoration: none;font-weight: 500;}div > p > a:hover{background-color: #4fc3f7;color: black;}</style>', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
 st.write("Explore the projects on this dashboard to learn more about our services and the applications of Machine Learning and Data Science")
 
@@ -24,12 +24,11 @@ if option == "Start Here":
 if option == "Machine Learning - Prediction":
     
     project_info = {"Project Name":" Boston 1970s House Price Prediction","Project Type":"Machine Learning - Prediction","Machine Learning Model": "Regression","Machine Learning description":"Regression models can be used to predcit and forecast based on historical data. Various models can be used for linear, non-linear and logistic relationships. Independant variables (explanatory variables) and used to predict the dependant variable (explained or response variable","Applications":"Marketing, Operations, Logistics, Finance"}
-    st.write(project_info)
     my_dict = project_info
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
-    st.markdown('<div id="project_link" href="https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py" target="_blank">GENERATE PROJECT</div>', unsafe_allow_html=True)
+    st.markdown(project_link, unsafe_allow_html=True) #root > div:nth-child(1) > div > div > div > div > section.main.css-1v3fvcr.eknhn3m1 > div > div:nth-child(1) > div:nth-child(6) > div > div > p > a
     
 
 if option == "Machine Learning - Classification":
