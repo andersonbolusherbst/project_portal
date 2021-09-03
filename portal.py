@@ -29,7 +29,7 @@ if option == "Machine Learning - Prediction":
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
-    st.markdown('<div id="project_link">[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)</div>', unsafe_allow_html=True)
+    st.markdown('<div id="project_link" href="https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py" target="_blank">GENERATE PROJECT</div>', unsafe_allow_html=True)
     
 
 if option == "Machine Learning - Classification":
