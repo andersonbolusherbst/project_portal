@@ -28,6 +28,7 @@ if option == "Machine Learning - Prediction":
     my_dict = project_info
     df = pd.DataFrame(list(my_dict.items()),columns = ['column1','column2']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
+    st.write(df)
     st.markdown(project_link, unsafe_allow_html=True)
     
 
