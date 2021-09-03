@@ -10,6 +10,7 @@ from iex import IEXStock
 st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}div > p > a{border: solid 1.5px;border-radius: 2px;padding: 5px;text-decoration: none;font-weight: 500;}div > p > a:hover{background-color: #4fc3f7;color: black;text-decoration: none;}</style>', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
 st.write("Explore the projects on this dashboard to learn more about our services and the applications of Machine Learning and Data Science")
+st.info('"Classification" :arrow_right: predicting a label. "Regression":arrow_right: predicting a quantity')
 
 option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','API Integration', 'Data Analysis'))
 
@@ -28,7 +29,7 @@ if option == "Machine Learning - Prediction":
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
-    st.info('"Classification" is about predicting a label and "Regression" is about predicting a quantity')
+    
     st.markdown(project_link, unsafe_allow_html=True) #root > div:nth-child(1) > div > div > div > div > section.main.css-1v3fvcr.eknhn3m1 > div > div:nth-child(1) > div:nth-child(6) > div > div > p > a
     
 
@@ -41,7 +42,7 @@ if option == "Machine Learning - Classification":
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
     st.table(df)
     st.info('"Classification" is about predicting a label and "Regression" is about predicting a quantity')
-    st.markdown(project_link, unsafe_allow_html=True)
+    
     
   
 
