@@ -25,6 +25,8 @@ if option == "Machine Learning - Prediction":
     
     project_info = {"Project Name":" Boston 1970s House Price Prediction","Project Type":"Machine Learning - Prediction","Machine Learning Model": "Regression","Machine Learning description":"Regression models can be used to predcit and forecast based on historical data. Various models can be used for linear, non-linear and logistic relationships. Independant variables (explanatory variables) and used to predict the dependant variable (explained or response variable","Applications":"Marketing, Operations, Logistics, Finance"}
     st.write(project_info)
+    my_dict = project_info
+    df = pd.DataFrame(list(my_dict.items()),columns = ['column1','column2']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.markdown(project_link, unsafe_allow_html=True)
     
