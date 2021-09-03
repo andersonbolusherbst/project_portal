@@ -7,11 +7,11 @@ import datetime as dt
 from iex import IEXStock
 
 
-st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}.css-1v3fvcr.eknhn3m1 > div > div:nth-child(1) > div:nth-child(6) > div > div > p > a{border: solid 1.5px;border-radius: 2px;padding: 5px;text-decoration: none;font-weight: 500;}.css-1v3fvcr.eknhn3m1 > div > div:nth-child(1) > div:nth-child(6) > div > div > p > a:hover{background-color: #4fc3f7;color: black;}</style>', unsafe_allow_html=True)
+st.markdown('<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{color: #03a9f4;text-shadow: 0.4px 0.4px 1px black;}#project_link{border: solid 1.5px;border-radius: 2px;padding: 5px;text-decoration: none;font-weight: 500;}#project_link:hover{background-color: #4fc3f7;color: black;}</style>', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
 st.write("Explore the projects on this dashboard to learn more about our services and the applications of Machine Learning and Data Science")
 
-option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','API Integration', 'Data Analysis', 'Automation'))
+option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','API Integration', 'Data Analysis'))
 
 st.header("You are viewing: "+option)
 
@@ -26,18 +26,23 @@ if option == "Machine Learning - Prediction":
     project_info = {"Project Name":" Boston 1970s House Price Prediction","Project Type":"Machine Learning - Prediction","Machine Learning Model": "Regression","Machine Learning description":"Regression models can be used to predcit and forecast based on historical data. Various models can be used for linear, non-linear and logistic relationships. Independant variables (explanatory variables) and used to predict the dependant variable (explained or response variable","Applications":"Marketing, Operations, Logistics, Finance"}
     st.write(project_info)
     my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items()),columns = ['column1','column2']) 
+    df = pd.DataFrame(list(my_dict.items())) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
-    st.markdown(project_link, unsafe_allow_html=True)
+    st.markdown('<div id=project_link">'project_link'</div>', unsafe_allow_html=True)
     
 
 if option == "Machine Learning - Classification":
     
     project_info = {"Project Name":" Predicting Subscription Service Cancellations","Project Type":"Machine Learning - Classification","Machine Learning Model": "Decision Tree","Machine Learning description":"Decision Tree models can be used to place dependant variables into groups or categories based on their characteristics/features, in this case - 'cancel' or 'don't cancel' the subscription. There are a variety of classification models that are best suited for different applications and data sets, such as Random Forest, KNN and Support Vector Machine","Applications":"Marketing, Operations, Logistics, Finance"}
-    st.write(project_info)
+    my_dict = project_info
+    df = pd.DataFrame(list(my_dict.items())) 
+    
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
+    st.table(df)
     st.markdown(project_link, unsafe_allow_html=True)
+    
+  
 
 if option == "API Integration":
     
