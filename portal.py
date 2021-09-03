@@ -26,17 +26,17 @@ if option == "Machine Learning - Prediction":
     project_info = {"Project Name":" Boston 1970s House Price Prediction","Project Type":"Machine Learning - Prediction","Machine Learning Model": "Regression","Machine Learning description":"Regression models can be used to predcit and forecast based on historical data. Various models can be used for linear, non-linear and logistic relationships. Independant variables (explanatory variables) and used to predict the dependant variable (explained or response variable","Applications":"Marketing, Operations, Logistics, Finance"}
     st.write(project_info)
     my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items())) 
+    df = pd.DataFrame(list(my_dict.items())columns = ['Label','Description']) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
-    st.markdown('<div id="project_link">project_link</div>', unsafe_allow_html=True)
+    st.markdown('<div id="project_link">[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)</div>', unsafe_allow_html=True)
     
 
 if option == "Machine Learning - Classification":
     
     project_info = {"Project Name":" Predicting Subscription Service Cancellations","Project Type":"Machine Learning - Classification","Machine Learning Model": "Decision Tree","Machine Learning description":"Decision Tree models can be used to place dependant variables into groups or categories based on their characteristics/features, in this case - 'cancel' or 'don't cancel' the subscription. There are a variety of classification models that are best suited for different applications and data sets, such as Random Forest, KNN and Support Vector Machine","Applications":"Marketing, Operations, Logistics, Finance"}
     my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items())) 
+    df = pd.DataFrame(list(my_dict.items())columns = ['Label','Description'])
     
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
     st.table(df)
