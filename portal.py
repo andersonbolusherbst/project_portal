@@ -32,7 +32,7 @@ if option == "Machine Learning - Prediction":
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
     
-    st.markdown(project_link, unsafe_allow_html=True) #root > div:nth-child(1) > div > div > div > div > section.main.css-1v3fvcr.eknhn3m1 > div > div:nth-child(1) > div:nth-child(6) > div > div > p > a
+    st.markdown(project_link, unsafe_allow_html=True)
     
 
 if option == "Machine Learning - Classification":
@@ -43,7 +43,7 @@ if option == "Machine Learning - Classification":
     
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
     st.table(df)
-    st.info('"Classification" is about predicting a label and "Regression" is about predicting a quantity')
+    st.markdown(project_link, unsafe_allow_html=True)
     
     
   
