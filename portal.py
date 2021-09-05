@@ -13,8 +13,11 @@ st.write("Explore the projects on this dashboard to learn more about our service
 with st.expander("A Quick Primer on Machine Learning:"):
         st.info('Machine learning is about finding patterns in structured data and making predictions. These can be (and often are) predictions about what will happen in the future, such as a stock price forecast. But this is not the only way you’ll find the term “predictions” used in machine learning solutions. It also means predicting answers to questions like: “Is this customer likely to buy my product?”, "Is this a good location to open a physical store ?" or "What type of customer is most likely to cancel a subscription?" The latter kind of prediction isn’t a time-based prediction (looking into the future), but rather a prediction in terms of assigning a label to the new observation, based on patterns identified from historical observations.')
         st.info('"Classification"  :arrow_right:  predicting a label. "Regression" :arrow_right: predicting a quantity')
+        
+begin = st.button("Begin Tour")
 
-option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','Machine Learning - Time Series Forecast','API Integration', 'Data Analysis'))
+if begin:
+        option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','Machine Learning - Time Series Forecast','API Integration', 'Data Analysis'))
 
 st.header("You are viewing: "+option)
 
@@ -47,7 +50,7 @@ if option == "Machine Learning - Classification":
         
 if option == "Machine Learning - Time Series Forecast":
     
-    project_info = {"Project Name":" Predicting Stock Prices","Project Type":"Machine Learning - Time Series Forecast","Machine Learning Model": "Facebook Prophet","Machine Learning description":"At its core, the Prophet procedure is an additive regression model with four main components: A piecewise linear or logistic growth curve trend. Prophet automatically detects changes in trends by selecting changepoints from the data,a yearly seasonal component modeled using Fourier series,a weekly seasonal component using dummy variables,a user-provided list of important holidays.","Applications":"Forecasting supply and demand, the amount of products/services to be purchased, future costs and prices"}
+    project_info = {"Project Name":" Predicting Stock Prices","Project Type":"Machine Learning - Time Series Forecast","Machine Learning Model": "Facebook Prophet","Machine Learning description":"Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.","Applications":"Forecasting supply and demand, the amount of products/services to be purchased, future costs and prices"}
     my_dict = project_info
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
     
@@ -153,4 +156,6 @@ if option == "Data Analysis":
 if option == "Automation":
     st.subheader("data analysis project will be added soon")
     
+
+
 
