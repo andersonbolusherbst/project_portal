@@ -158,11 +158,14 @@ if option == "API Integration":
 
 
 if option == "Data Analysis":
-    st.subheader("data analysis project will be added soon")
+    st.subheader("data analysis description table to be added ")
+
+    project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/eda/main/eda.py)'
+    
+    st.markdown(project_link, unsafe_allow_html=True)
 
 
-if option == "Automation":
-    st.subheader("data analysis project will be added soon")
+
 
 
 
