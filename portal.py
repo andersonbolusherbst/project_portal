@@ -56,7 +56,7 @@ if option == "Machine Learning - Time Series Forecast":
     st.table(df)
     st.markdown(project_link, unsafe_allow_html=True)
         
- if option == "Machine Learning - Lead Scoring":
+if option == "Machine Learning - Lead Scoring":
 
     project_info = {"Project Name":" Lead Scoring","Project Type":"Machine Learning - Lead Scoring","Machine Learning Model": "Info to be updated","Machine Learning description":"Info to be updated","Applications":"Ranking and categorising groups of data, predicting likelyhood of a customer to: default on a lone, cancel a subscription, buy a product, and the customer lifetime value"}
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
