@@ -14,7 +14,7 @@ with st.expander("New here? A Quick Primer on Machine Learning:"):
         st.info('Machine learning is about finding patterns in structured data and making predictions. These can be (and often are) predictions about what will happen in the future, such as a stock price forecast. But this is not the only way you’ll find the term “predictions” used in machine learning solutions. It also means predicting answers to questions like: “Is this customer likely to buy my product?”, "Is this a good location to open a physical store ?" or "What type of customer is most likely to cancel a subscription?" The latter kind of prediction isn’t a time-based prediction (looking into the future), but rather a prediction in terms of assigning a label to the new observation, based on patterns identified from historical observations.')
         st.info('"Classification"  :arrow_right:  predicting a label. "Regression" :arrow_right: predicting a quantity')
 
-option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','Machine Learning - Time Series Forecast','API Integration', 'Data Analysis'))
+option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','Machine Learning - Time Series Forecast','Machine Learning - Lead Scoring','API Integration', 'Data Analysis'))
 
 st.header("You are viewing: "+option)
 
@@ -52,6 +52,15 @@ if option == "Machine Learning - Time Series Forecast":
     df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/stock_forecast/main/main.py)'
+    st.table(df)
+    st.markdown(project_link, unsafe_allow_html=True)
+        
+ if option == "Machine Learning - Lead Scoring":
+
+    project_info = {"Project Name":" Lead Scoring","Project Type":"Machine Learning - Lead Scoring","Machine Learning Model": "Info to be updated","Machine Learning description":"Info to be updated","Applications":"Ranking and categorising groups of data, predicting likelyhood of a customer to: default on a lone, cancel a subscription, buy a product, and the customer lifetime value"}
+    df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
+
+    project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/leadscoring/main/streamlit.py)'
     st.table(df)
     st.markdown(project_link, unsafe_allow_html=True)
 
