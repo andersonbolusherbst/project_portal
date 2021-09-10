@@ -12,6 +12,7 @@ div > p > a:hover{background-color: #4fc3f7;color: black;text-decoration: none;}
 .st-bw{font-weight: 500;font-size:26px;}
 .st-c5:hover {color: #03a9f4;}
 .st-cc{width: 30px; color:#000000;}
+.st-cb{height: auto;}
 .st-cc:hover{color:#03a9f4;}
 </style>''', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
