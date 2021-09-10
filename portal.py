@@ -13,7 +13,7 @@ div > p > a:hover{background-color: #4fc3f7;color: black;text-decoration: none;}
 .st-c5:hover {color: #03a9f4;}
 .st-cc{width: 30px; color:#000000;}
 .st-cb{height: auto;}
-.css-1axc4yc .streamlit-expanderHeader:hover svg{color: #03a9f4;;}
+.css-1axc4yc .streamlit-expanderHeader:hover svg{color: #03a9f4 !important;}
 .st-cc:hover{color:#03a9f4;}
 </style>''', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
