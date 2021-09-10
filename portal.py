@@ -15,6 +15,7 @@ div > p > a:hover{background-color: #4fc3f7;color: black;text-decoration: none;}
 .st-cb{height: auto;}
 .css-1axc4yc .streamlit-expanderHeader:hover svg{color: #03a9f4 !important;}
 .st-cc:hover{color:#03a9f4;}
+div:nth-child(7) > div > div > p{margin-top: 5%}
 </style>''', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
 st.write("Explore the projects on this dashboard to learn more about our services and the applications of Machine Learning and Data Science")
