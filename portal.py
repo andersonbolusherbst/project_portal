@@ -11,7 +11,7 @@ st.markdown('''<style>h1{color: #03a9f4;text-shadow: 1px 1.5px 2px black;}h2{col
 div > p > a:hover{background-color: #4fc3f7;color: black;text-decoration: none;}
 .st-bw{font-weight: 500;font-size:26px;}
 .st-c5:hover {color: #03a9f4;}
-.st-cc { width: 30px; color:#000000;}
+.st-cc{width: 30px; color:#000000;}
 .st-cc:hover{color:#03a9f4;}
 </style>''', unsafe_allow_html=True)
 st.title("HAB LABS Project Portal")
