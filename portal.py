@@ -45,7 +45,7 @@ if option == "Machine Learning - Prediction":
     st.markdown(project_link, unsafe_allow_html=True)
 
 
-if option == "Machine Learning -Churn Rate Classification":
+if option == "Machine Learning - Churn Rate Classification":
 
     st.markdown(
            """
@@ -193,6 +193,17 @@ if option == "API Integration":
 
 if option == "Data Analysis":
     st.subheader("data analysis description table to be added ")
+
+    st.markdown(
+               """
+        | Label | Description |
+        | --- | --- |
+        | `Project Name` | Data Dashboard |
+        | `Project Type` | Exploratory Data Analysis, Data Visualizations and Customer Segmentation |
+        | `Skills Employed` | Python, Pandas, Seaborn, Matplotlib, Sweetviz and the Sklearn Machine Learning Library|
+        | `Data Dashboard Description`| Exploratory data analysis is a way to better understand data. Data visualizations are typically more interpretable and easy to generate, so you can rapidly explore many different aspects of a dataset. The goal is to generate simple summaries of the data that inform your businesses marketing question(s). Customer Segmentation  enables a company to customize its relationships with the customers. Utilizing a KMeans machine learning algorithim to find similar characteristics in each customer's behaviour and needs, this algorithim then generalizes customers into groups to satisfy demands with various strategies. |
+        | `Applications` | Uncover the underlying structure of a dataset. Exposes trends, patterns, and relationships with your comapany´s data that are not readily apparent |
+        """)
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/eda/main/eda.py)'
     
