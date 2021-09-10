@@ -27,20 +27,38 @@ if option == "Start Here":
 
 if option == "Machine Learning - Prediction":
 
-    project_info = {"Project Name":" Boston 1970s House Price Prediction","Project Type":"Machine Learning - Prediction","Machine Learning Model": "Regression","Machine Learning description":"Regression models can be used to predcit and forecast based on historical data. Various models can be used for linear, non-linear and logistic relationships. Independant variables (explanatory variables) and used to predict the dependant variable (explained or response variable","Applications":"Forecasting- _sales, costs, signups_. prediction, time series modeling, and determining causal-effect relationship between variables: _advertising spend & revenue_ , _the impact of consumer behavior changes and sales_"}
-    my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description']) 
+    st.markdown(
+               """
+        | Label | Description |
+        | --- | --- |
+        | `Project Name` | Boston 1970s House Price Prediction |
+        | `Project Type` | Machine Learning - Predict Boston House Prices in the 1970s |
+        | `Machine Learning Model` | Regression |
+        | `Machine Learning Description`| Regression models can be used to predict and forecast based off historical data. Independant variables (explanatory variables) are used to predict the dependant variable (explained or response variable). In this case characteristics of houses have been used to predict a houses final price|
+        | `Applications` | Forecasting sales, costs and  customer signups. Predicting the price of a house given house features, predicting the impact of SAT/GRE scores on college admissions and determining the causal-effect relationship between advertising spend & revenue. |
+             
+        """
+        ) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
     st.table(df)
 
     st.markdown(project_link, unsafe_allow_html=True)
 
 
-if option == "Machine Learning - Classification":
+if option == "Machine Learning -Churn Rate Classification":
 
-    project_info = {"Project Name":" Predicting Subscription Service Cancellations","Project Type":"Machine Learning - Classification","Machine Learning Model": "Decision Tree","Machine Learning description":"Decision Tree models can be used to place dependant variables into groups or categories based on their characteristics/features, in this case - 'cancel' or 'don't cancel' the subscription. There are a variety of classification models that are best suited for different applications and data sets, such as Random Forest, KNN and Support Vector Machine","Applications":"Customer segmentation, churn rate prediction, lead scoring, image recognition, borrower loan defaults, risk management"}
-    my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
+    st.markdown(
+           """
+        | Label | Description |
+        | --- | --- |
+        | `Project Name` | Predicting Subscription Service Cancellations (Churn Rate) |
+        | `Project Type` | Machine Learning - Classification (Churn Rate of Telco Communications) |
+        | `Machine Learning Model` | Decision Tree |
+        | `Machine Learning Description`| Decision Tree models can be used to place dependant variables into groups or categories based on their characteristics/features. In this case - 'cancel' or 'don't cancel' a subscription. There are a variety of classification models that are best suited for different applications and data sets, such as Random Forest, KNN and Support Vector Machine. In this case we employed a Light Gradient Boost Machine Learning Model.|
+        | `Applications` | Customer segmentation, churn rate prediction, lead scoring, image recognition, borrower loan defaults and business risk management |
+             
+        """
+        )
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
     st.table(df)
@@ -48,9 +66,18 @@ if option == "Machine Learning - Classification":
 
 if option == "Machine Learning - Time Series Forecast":
 
-    project_info = {"Project Name":" Predicting Stock Prices","Project Type":"Machine Learning - Time Series Forecast","Machine Learning Model": "Facebook Prophet","Machine Learning description":"Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.","Applications":"Forecasting supply and demand, the amount of products/services to be purchased, future costs and prices"}
-    my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
+    st.markdown(
+                        """
+                    | Label | Description |
+                    | --- | --- |
+                    | `Project Name` | Predicting Stock Prices |
+                    | `Project Type` | Machine Learning - Time Series Forecast (Forcasting Stock Prices) |
+                    | `Machine Learning Model` | Facebook Prophet |
+                    | `Machine Learning Description`| Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, daily seasonality and holiday effects. It works best with time series data that has strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend and typically handles outliers well.|
+                    | `Applications` | Customer segmentation, churn rate prediction, lead scoring, image recognition, borrower loan defaults and business risk management |
+                    
+                    """
+                    )
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/stock_forecast/main/main.py)'
     st.table(df)
@@ -58,9 +85,16 @@ if option == "Machine Learning - Time Series Forecast":
         
 if option == "Machine Learning - Lead Scoring":
 
-    project_info = {"Project Name":" Lead Scoring","Project Type":"Machine Learning - Lead Scoring","Machine Learning Model": "Info to be updated","Machine Learning description":"Info to be updated","Applications":"Ranking and categorising groups of data, predicting likelyhood of a customer to: default on a lone, cancel a subscription, buy a product, and the customer lifetime value"}
-    my_dict = project_info
-    df = pd.DataFrame(list(my_dict.items()),columns = ['Label','Description'])
+    st.markdown(
+               """
+        | Label | Description |
+        | --- | --- |
+        | `Project Name` | Lead scoring- Hiring assessment platform |
+        | `Project Type` | Machine Learning - Predict probability of making a sale to each potential customer |
+        | `Machine Learning Model` | Regression - Gradient boosting decision tree |
+        | `Machine Learning Description`| Regression models can be used to predict and forecast based off historical data. Independant variables (explanatory variables) are used to predict the dependant variable (explained or response variable). In this case characteristics of leads have been used to predict the probability of converting the lead into a paying customer|
+        | `Applications` | Forecasting sales, costs and  customer signups. Predicting the price of a house given house features, predicting the impact of SAT/GRE scores on college admissions and determining the causal-effect relationship between advertising spend & revenue. |
+        """
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/leadscoring/main/streamlit.py)'
     st.table(df)
