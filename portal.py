@@ -40,7 +40,7 @@ if option == "Machine Learning - Prediction":
         """
         ) 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/house_price_prediction/main/boston.py)'
-    st.table(df)
+    
 
     st.markdown(project_link, unsafe_allow_html=True)
 
@@ -61,7 +61,7 @@ if option == "Machine Learning -Churn Rate Classification":
         )
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/churn/main/churn.py)'
-    st.table(df)
+    
     st.markdown(project_link, unsafe_allow_html=True)
 
 if option == "Machine Learning - Time Series Forecast":
@@ -80,7 +80,7 @@ if option == "Machine Learning - Time Series Forecast":
                     )
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/stock_forecast/main/main.py)'
-    st.table(df)
+    
     st.markdown(project_link, unsafe_allow_html=True)
         
 if option == "Machine Learning - Lead Scoring":
@@ -94,10 +94,10 @@ if option == "Machine Learning - Lead Scoring":
         | `Machine Learning Model` | Regression - Gradient boosting decision tree |
         | `Machine Learning Description`| Regression models can be used to predict and forecast based off historical data. Independant variables (explanatory variables) are used to predict the dependant variable (explained or response variable). In this case characteristics of leads have been used to predict the probability of converting the lead into a paying customer|
         | `Applications` | Forecasting sales, costs and  customer signups. Predicting the price of a house given house features, predicting the impact of SAT/GRE scores on college admissions and determining the causal-effect relationship between advertising spend & revenue. |
-        """
+        """)
 
     project_link ='[GENERATE PROJECT](https://share.streamlit.io/andersonbolusherbst/leadscoring/main/streamlit.py)'
-    st.table(df)
+    
     st.markdown(project_link, unsafe_allow_html=True)
 
 
