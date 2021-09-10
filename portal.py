@@ -13,7 +13,7 @@ st.write("Explore the projects on this dashboard to learn more about our service
 with st.expander("New here? A Quick Primer on Machine Learning:"):
         st.info('Machine learning is about finding patterns in structured data and making predictions. These can be (and often are) predictions about what will happen in the future, such as a stock price forecast. But this is not the only way you’ll find the term “predictions” used in machine learning solutions.')  
         st.info('It also means predicting answers to questions like: “Is this customer likely to buy my product?”, "Is this a good location to open a physical store ?" or "What type of customer is most likely to cancel a subscription?" The latter kind of prediction isn’t a time-based prediction (looking into the future), but rather a prediction in terms of assigning a label to the new observation, based on patterns identified from historical observations.')
-        st.info('"Classification"  :arrow_right:  Predicting a label. "Regression" :arrow_right: Predicting a quantity')
+        st.info('In summary: "Classification"  :arrow_right:  Predicting a label. "Regression" :arrow_right: Predicting a quantity')
         st.info('When viewing these projects, think how the concepts of prediction can be applied to your business. This may be through forecasting numerical values or classifying products or customers into groups/categories')
 
 option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning -Churn Rate Classification','Machine Learning - Time Series Forecast','Machine Learning - Lead Scoring','API Integration', 'Data Analysis'))
