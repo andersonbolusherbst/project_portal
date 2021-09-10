@@ -15,7 +15,7 @@ with st.expander("New here? A Quick Primer on Machine Learning:"):
         st.info('"Classification"  :arrow_right:  predicting a label. "Regression" :arrow_right: predicting a quantity')
         st.info('When viewing these projects, think how the concepts of prediction can be applied to your business. This may be through forecasting numerical values or classifying products or customers into groups/categories')
 
-option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning - Classification','Machine Learning - Time Series Forecast','Machine Learning - Lead Scoring','API Integration', 'Data Analysis'))
+option = st.sidebar.selectbox("Please select a project type", ('Start Here','Machine Learning - Prediction', 'Machine Learning -Churn Rate Classification','Machine Learning - Time Series Forecast','Machine Learning - Lead Scoring','API Integration', 'Data Analysis'))
 
 st.header("You are viewing: "+option)
 
