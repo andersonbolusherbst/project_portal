@@ -45,7 +45,7 @@ if option == "Machine Learning - Prediction":
     st.markdown(project_link, unsafe_allow_html=True)
 
 
-if option == "Machine Learning - Churn Rate Classification":
+if option == 'Machine Learning -Churn Rate Classification':
 
     st.markdown(
            """
